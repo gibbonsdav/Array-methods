@@ -53,3 +53,7 @@ function updateDOM(providedData = data) {
 function formatMoney(number) {
   return "$" + number.toFixed(2)
 }
+
+//event listeners
+
+addUserBtn.addEventListener("click", getRandomUser)
