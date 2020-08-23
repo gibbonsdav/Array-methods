@@ -48,6 +48,7 @@ button {
 .main {
   flex: 1;
   padding: 10px 20px;
+  width: 500px;
 }
 
 h2 {
