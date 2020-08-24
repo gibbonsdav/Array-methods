@@ -85,7 +85,7 @@ function updateDOM(providedData = data) {
 
 //format number as money
 function formatMoney(number) {
-  return "$" + number.toFixed(2)
+  return "$" + number.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,")
 }
 
 //event listeners
