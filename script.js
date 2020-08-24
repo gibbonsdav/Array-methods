@@ -5,6 +5,10 @@ const showMillionairesBtn = document.getElementById("show-millionaires")
 const sortBtn = document.getElementById("sort")
 const calculateWealthBtn = document.getElementById("calculate-wealth")
 
+const rulesBtn = document.getElementById("rules-btn")
+const closeBtn = document.getElementById("close-btn")
+const rules = document.getElementById("rules")
+
 let data = []
 
 getRandomUser()
@@ -95,3 +99,6 @@ doubleBtn.addEventListener("click", doubleMoney)
 sortBtn.addEventListener("click", sortByRichest)
 showMillionairesBtn.addEventListener("click", showMillionaires)
 calculateWealthBtn.addEventListener("click", calculateWealth)
+
+rulesBtn.addEventListener("click", () => rules.classList.add("show"))
+closeBtn.addEventListener("click", () => rules.classList.remove("show"))
